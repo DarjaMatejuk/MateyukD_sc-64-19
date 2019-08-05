@@ -32,26 +32,38 @@
 
     <p>Цитата короткая:
         <br><em>И всё-таки она вертится!</em></p>
-<p>Цитата занимающая несколько предложений:</p>
-<p>&ensp;&ensp;&ensp;&ensp;&ensp;О сколько нам открытий чудных
+    <p>Цитата занимающая несколько предложений:</p>
+    <p>&ensp;&ensp;&ensp;&ensp;&ensp;О сколько нам открытий чудных
     <br>&ensp;&ensp;&ensp;&ensp;&ensp;Готовят просвещенья дух
     <br>&ensp;&ensp;&ensp;&ensp;&ensp;И опыт, сын ошибок трудных,
     <br>&ensp;&ensp;&ensp;&ensp;&ensp;И гений, парадоксов друг,
     <br>&ensp;&ensp;&ensp;&ensp;&ensp;И случай, бог изобретатель...</p>
-<hr size=1px width=1500px align="left">
-<h3>Семантические и функциональные строчные теги</h3>
-    <p><strong>Тэг <STRONG> делает данный фрагмент текста более важным.</strong><em>Тэг <em> менее важным.</em></em>
-        <br>В то время как теги <b> и <i> делают текст просто <strong>полужирным</strong> и <em>курсивом</em> соответственно.</p>
+    <hr size=1px width=1500px align="left">
+    <h3>Семантические и функциональные строчные теги</h3>
+    <p><strong>Тэг &#60;STRONG&#62; делает данный фрагмент текста более важным.</strong> <em>Тэг&#60;em&#62; менее важным.</em>
+        <br>В то время как теги &#60;b&#62; и &#60;i&#62; делают текст просто <strong>полужирным</strong> и <em>курсивом</em> соответственно.</p>
        <hr size=1px width=1500px align="left">
 
      <h3>Теги форматирования машинного языка</h3>
-<p>При выполнении программного кода на языке PERL:</p>
+    <p>При выполнении программного кода на языке PERL:</p>
 
     <code>#!/usr/local/bin/perl
         <br>print "Content‐type: text/html\n\n";
-        <br>print "<H1>Hello World</H1>\n";</code>
+        <br>print "&#60;H1&#62;Hello World&#60;/H1&#62;\n";</code>
 
     <p>Программа выведет:</p>
-
+    <code>Hello, World!</code>
+    <p>Однако в браузере у нас будет отображаться результат выполнения этой программы:</p>
+    <h1><strong>Hello, World!</strong></h1>
+    <hr size=1px width=1500px align="left">
+    <h3>Комментарии и литералы (мнемоники) в HTML</h3>
+    <code>!-- это комментарий --&#62;
+    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#60;!-- это комментарий,
+    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;занимающий более одной строки --&#62
+    </code>
+    <hr size=1px width=1500px align="left">
+    <h3>Теги над- и подстрочных символов</h3>
+    <h4 align="center">Магазин работает:</h4>
+    <p> align="center">c 08<u>30</u></p>
 </body>
 </html>
