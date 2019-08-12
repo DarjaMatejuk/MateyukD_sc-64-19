@@ -7,15 +7,18 @@
 <body>
 <h1>HOW-TO: программа на Python, Часть 3</h1>
 <ul>
-    <li><em>Программа на Python &mdash; часть 1</em></li>
-    <li><em>Программа на Python &mdash; часть 2</em></li>
-    <li><em>Программа на Python &mdash; часть 3</em></li>
+    <li><a href="http://localhost:63342/Darja_Mateyuk_sc-64-19/index2.html?_ijt=1o4qqr52v9l055p86qhjoakntn">
+        <em>Программа на Python &mdash; часть 1</em></a></li>
+    <li><a href="http://localhost:63342/Darja_Mateyuk_sc-64-19/index3.html?_ijt=hhpojkggejvlugkaa39pvptsgd">
+        <em>Программа на Python &mdash; часть 2</em></a></li>
+    <li><a href="http://localhost:63342/Darja_Mateyuk_sc-64-19/index4.html?_ijt=m87ds2ua2ehs1om9joaa79k88j">
+        <em>Программа на Python &mdash; часть 3</em></a></li>
 </ul>
-    <h2>Содержание</h2>
+<h2><a name="chapter3">Содержание</a></h2>
     <h3>HOW-TO: рограмма на Python, Часть 3</h3>
 
-    <li><span style="text-decoration: underline;">Модули</span></li>
-    <li><span style="text-decoration: underline;">Функции</span></li>
+    <li><a href="#chapter1">Модули</a></li>
+    <li><a href="#chapter2">Функции</a></li>
 
     <br>
     <hr size=1px width=620px align="left">
@@ -24,7 +27,8 @@
         <br>присвоение, операторы <strong>if</strong> и <strong>while</strong>. Я обещал, что в этой части мы изучим модули и
         <br>функции. Давайте начнём.</p>
 
-    <h2>Модули</h2>
+<h2><a name="chapter1">Модули</a></h2>
+<p><a href="#chapter3">К содержанию</a></p>
     <p>Модули предлагают способ расширить программирование на Python. Вы можете создать
         <br>свои модули, использовать те, которые поставляются с Python или которые написали
         <br>другие. В самом Python есть сотни модулей, которые облегчают написание программ.
@@ -33,7 +37,7 @@
         Некоторые модули предназначены для определённых
         <br>операционных систем, но большинство из них кроссплатформенные и работают
         <br>одинаково на <span style="text-decoration: underline;">Linux</span>, <span style="text-decoration: underline;">Mac</span>
-            и <span style="text-decoration: underline;">Microsoft Windows</span>. Для использования внешнего модуля
+        и <span style="text-decoration: underline;">Microsoft Windows</span>. Для использования внешнего модуля
         <br>необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
         <br>называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
         <br>используем этот модуль в нашем первом примере.</p>
@@ -56,10 +60,11 @@
     <br>
     <hr size=1px width=620px align="left">
 
-    <h2>Функции</h2>
+<h2><a name="chapter2">Функции</a></h2>
+<p><a href="#chapter3">К содержанию</a></p>
 
     <p>Когда мы импортировали модуль random, мы использовали функцию randint(). Функция
-       <br> &mdash; это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
+        <br> &mdash; это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
         <br>более одного раза. Это упрощает работу над программой и предотвращает набор одного и
         <br>того же кода снова и снова. Грубо говоря, если вам нужно написать некоторый код
         <br>больше, чем 1-2 раза, стоит сделать его функцией. Хотя следующие два примера очень
@@ -75,14 +80,14 @@
 
         <p>print '\n'
             <br>print '%d + %d = %d ' % (1,4,1+4)
-        <br>print '%d * %d = %d ' % (1,4,1*4)
-        <br>print '%d - %d = %d ' % (1,4,1-4)
+            <br>print '%d * %d = %d ' % (1,4,1*4)
+            <br>print '%d - %d = %d ' % (1,4,1-4)
 
         <p>print '\n'
-        <br>print '%d + %d = %d ' % (10,5,10+5)
-        <br>print '%d * %d = %d ' % (10,5,10*5)
-        <br>print '%d - %d = %d ' % (10,5,10-5)
-        <br>print '\n'</p></code>
+            <br>print '%d + %d = %d ' % (10,5,10+5)
+            <br>print '%d * %d = %d ' % (10,5,10*5)
+            <br>print '%d - %d = %d ' % (10,5,10-5)
+            <br>print '\n'</p></code>
 
     <p>Здесь нужно не только набрать много текста, но и непременно возникнут ошибки как при
         <br>написании, так и при внесении изменений. Вместо этого мы создадим функцию, которую
@@ -95,17 +100,18 @@
 
 
     <code>#silly example 2...still silly, but better
-    <br>def DoTwo(num1,num2):
-    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d + %d = %d ' % (num1,num2,num1+num2)
-    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d * %d = %d ' % (num1,num2,num1*num2)
-    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d - %d = %d ' % (num1,num2,num1-num2)
-    <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '\n'
-    <br>DoTwo(1,2)
+        <br>def DoTwo(num1,num2):
+        <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d + %d = %d ' % (num1,num2,num1+num2)
+        <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d * %d = %d ' % (num1,num2,num1*num2)
+        <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '%d - %d = %d ' % (num1,num2,num1-num2)
+        <br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;print '\n'
+        <br>DoTwo(1,2)
         <br>DoTwo(1,4)
         <br>DoTwo(10,5)</code>
 
     <p>Как видите, здесь написано меньше кода &mdash; 8 строк вместо 12. Если нам нужно будет что-
         <br>либо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
         <br>программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+
 </body>
 </html>
