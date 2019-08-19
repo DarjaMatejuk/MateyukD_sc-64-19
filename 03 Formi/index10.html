@@ -9,15 +9,48 @@
 <form action="http://fe.it-academy.by/TestForm.php">
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="Фамилия" name="a" value="test"> <br>
-        <input type="text" name="b" placeholder="test"> <br>
-
-        <label>
-            Name
-            <input type="text" name="a"> <br>
-        </label>
-
+        <input type="text" pattern="[А-Яа-я]" name="Фамилия" value="Фамилия" size="25" autofocus> <br>
+        <input type="text" pattern="" name="Имя" value="Имя" size="20"> <br>
+        <input type="text" pattern="" name="Отчество" value="Отчество" size="24"> <br>
+    <fieldset>
+        <legend>Паспортные данные</legend>
+        <input type="text" pattern="" name="AA" value="Серия">
+        <input type="text" pattern="" name="123456" value="Номер паспорта"> <br>
     </fieldset>
+    <fieldset>
+        <legend>Дата рождения</legend>
+        <input type="text" pattern="[0-9]{4}" name="Год рождения" value="2000"> <br>
+        <select name="list" id="list">
+            <option value="1">Январь</option>
+            <option value="2">Февраль</option>
+            <option value="3">Март</option>
+            <option value="4">Апрель</option>
+            <option value="5">Май</option>
+            <option value="6">Июнь</option>
+            <option value="7">Июль</option>
+            <option value="8">Август</option>
+            <option value="9">Сентябрь</option>
+            <option value="10">Октябрь</option>
+            <option value="11">Ноябрь</option>
+            <option value="12">Декабрь</option>
+        </select> <br>
+        <input type="number"  min="1" max="31" step="1"> <br>
+        <select name="list" id="list">
+            <option value="1">РБ</option> </select><br>
+        <label>
+        Адрес: <br>
+            <input type="text" name="Адрес:" size="15"> <br>
+        </label>
+    </fieldset>
+
+
+
+
+
+
+
+        <input type="text" name="Имя" placeholder="test"> <br>
+
 
     <fieldset>
         <legend>checkbox</legend>
