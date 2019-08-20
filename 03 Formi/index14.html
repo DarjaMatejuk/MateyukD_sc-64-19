@@ -12,7 +12,7 @@
         <th><strong>Простая форма поиска с вариантами:</strong></th>
     </tr>
     <tr>
-        <th align="left">
+        <td align="left">
         <fieldset>
             <legend>Строка поиска</legend>
             <input type="text" size="10">
@@ -22,9 +22,23 @@
             </label>
             <label>
                 <input type="radio" name="radio_group" value="в google" id="Checkbox_Group1_0" checked> в google
-            </label> <br>
+            </label>
+            <br>
     </fieldset>
-        </th>
+        </td>
+        <td align="left">
+            <fieldset>
+                <legend>Строка поиска</legend>
+                <input type="text" size="10" placeholder="это обязательное поле" required autofocus>*
+                <input type="submit" value="Искать"> <br>
+                <label>
+                    <input type="radio" name="radio_group" value="на сайте" id="Checkbox_Group1_0" checked> на сайте
+                </label>
+                <label>
+                    <input type="radio" name="radio_group" value="в google" id="Checkbox_Group1_0" checked> в google
+                </label> <br>
+            </fieldset>
+        </td>
 </tr>
 </table>
 </form>
