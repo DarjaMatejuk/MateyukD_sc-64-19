@@ -9,13 +9,13 @@
 <form action="http://fe.it-academy.by/TestForm.php">
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="text" pattern="[А-Яа-я]" name="Фамилия" value="Фамилия" size="25" autofocus> <br>
-        <input type="text" pattern="" name="Имя" value="Имя" size="20"> <br>
-        <input type="text" pattern="" name="Отчество" value="Отчество" size="24"> <br>
+        <input type="text" pattern="[А-Яа-я]" name="Фамилия" value="Фамилия" size="25" placeholder="это обязательное поле" required autofocus> <br>
+        <input type="text" pattern="[А-Яа-я]" name="Имя" value="Имя" size="20"placeholder="это обязательное поле" required> <br>
+        <input type="text" pattern="[А-Яа-я]" name="Отчество" value="Отчество" size="24" placeholder="это обязательное поле" required> <br>
     <fieldset>
         <legend>Паспортные данные</legend>
-        <input type="text" pattern="" name="AA" value="Серия">
-        <input type="text" pattern="" name="123456" value="Номер паспорта"> <br>
+        <input type="text" pattern="" name="AA" value="Серия" placeholder="это обязательное поле" required>
+        <input type="text" pattern="" name="123456" value="Номер паспорта" placeholder="это обязательное поле" required> <br>
     </fieldset>
     <fieldset>
         <legend>Дата рождения</legend>
@@ -35,16 +35,62 @@
             <option value="12">Декабрь</option>
         </select> <br>
         <input type="number"  min="1" max="31" step="1"> <br>
+    </fieldset>
         <select name="list" id="list">
             <option value="1">РБ</option> </select><br>
         <label>
         Адрес: <br>
-            <input type="text" name="Адрес:" size="15"> <br>
+            <input type="text" name="Адрес:" size="15" height="300"> <br>
         </label>
     </fieldset>
-
-
-
+    <fieldset>
+        <legend>Интересы</legend>
+        <fieldset>
+            <legend>array:Хобби</legend>
+            <label>
+                <input type="checkbox" name="Рыбалка">Рыбалка
+            </label> <br>
+            <label>
+            <input type="checkbox" name="Астрономия">Астрономия
+            </label> <br>
+            <label>
+            <input type="checkbox" name="Дайвинг">Дайвинг
+            </label> <br>
+            <label>
+            <input type="checkbox" name="Марки">Марки
+            </label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Домашние животные</legend>
+            <select name="list" id="list">
+                <optgroup label="Попугаи">
+                    <option value="1">Волнистый</option>
+                    <option value="2">Ара</option>
+                    <option value="3">Неразлучник</option>
+                </optgroup>
+                <optgroup label="Рыба">
+                    <option value="4">Караси</option>
+                    <option value="5">Окуни</option>
+                    <option value="6">Осётр</option>
+                </optgroup>
+                <optgroup label="Птицы">
+                    <option value="1">Стая ворон</option>
+                    <option value="2">Аист</option>
+                    <option value="3">Археоптерикс</option>
+                </optgroup>
+            </select> <br>
+        </fieldset>
+    </fieldset>
+    <fieldset>
+        <legend>Данные для входа и восстановления пароля</legend>
+        <input type="text" id="login" pattern="[A-Za-z] {5}" size="20" name="Логин" value="Логин" placeholder="это обязательное поле" required><br>
+        <input type="password" id="pass" pattern="[A-Za-z] {10}" size="20" name="Пароль" value="Пароль" placeholder="это обязательное поле" required><br>
+    </fieldset>
+    <fieldset>
+        <legend>Координаты</legend>
+        <input type="email" pattern="" size="20" name="email" value="ведите адрес почты"> <br>
+        <input type="url" pattern="" size="20" name="url" value="ведите адрес сайта"><br>
+    </fieldset>
 
 
 
