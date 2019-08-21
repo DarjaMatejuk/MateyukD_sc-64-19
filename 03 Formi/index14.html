@@ -32,10 +32,10 @@
                 <input type="text" size="10" placeholder="это обязательное поле" required autofocus>*
                 <input type="submit" value="Искать"> <br>
                 <label>
-                    <input type="radio" name="radio_group" value="на сайте" id="Checkbox_Group1_0" checked> на сайте
+                    <input type="radio" name="radio1" value="на сайте" id="Checkbox" checked> на сайте
                 </label>
                 <label>
-                    <input type="radio" name="radio_group" value="в google" id="Checkbox_Group1_0" checked> в google
+                    <input type="radio" name="radio1" value="в google" id="Checkbox" checked> в google
                 </label><br>
             </fieldset>
         </td>
@@ -44,11 +44,11 @@
        <th><strong>Простая форма авторизации</strong></th>
         <th><strong>Опрос (голосование):</strong></th>
     </tr>
-    <p><td align="left"></p>
+    <td align="left">
     <fieldset>
         <legend>Авторизируйтесь</legend>
-        <input type=text" ID="login" name="login" size="20" placeholder="это обязательное поле" required>* Логин<br>
-        <input type=text" ID="password" name="pass" size="20" placeholder="это обязательное поле" required>* Пароль<br>
+        <input type="text" ID="login" name="login" size="20" placeholder="это обязательное поле" required>* Логин<br>
+        <input type="text" ID="password" name="pass" size="20" placeholder="это обязательное поле" required>* Пароль<br>
         <label>
             <input type="checkbox" name=“val_1" id="chbox1" checked> Оставаться в системе <br>
         </label>
@@ -58,15 +58,28 @@
     <p><td align="left"></p>
     <fieldset>
         <legend>Как вам?</legend>
-        <input type=text" ID="login" name="login" size="20" placeholder="это обязательное поле" required>* Логин<br>
-        <input type=text" ID="password" name="pass" size="20" placeholder="это обязательное поле" required>* Пароль<br>
         <label>
-            <input type="checkbox" name=“val_1" id="chbox1" checked> Оставаться в системе <br>
-        </label>
-        <input type="submit" value="Войти"> <br>
+            <input type="radio" name="radio" value="ничего" id="Checkbox" checked> ничего<br>
+            <input type="radio" name="radio" value="неплохо" id="Checkbox" checked> неплохо <br>
+            <input type="radio" name="radio" value="хорошо" id="Checkbox" checked> хорошо<br>
+            <input type="radio" name="radio" value="супер" id="Checkbox" checked> супер <br>
+        </label> <br>
+        <input type="submit" value="Отправить"> <br>
     </fieldset>
     </td>
-
+    <tr>
+        <th align="left"><strong> Отзыв:</strong></th>
+        <th><strong>Выпадающий и мульти списки:</strong></th>
+    </tr>
+    <td align="left">
+        <fieldset>
+            <legend>Оставьте Ваш отзыв:</legend>
+            <input type="text" name="login" size="20">* Имя<br>
+            <input type="email" name="email" size="20" placeholder="это обязательное поле" required>* e-mail<br>
+            <input type="text" name="login" size="15" placeholder="Форма отправки"><br>
+            <input type="submit" value="Отправить"><br>
+        </fieldset>
+    </td>
 </table>
 </form>
 </body>
