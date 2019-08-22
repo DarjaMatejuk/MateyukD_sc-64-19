@@ -97,6 +97,29 @@
             <input type="submit" size="5" align="right" value="Ok"><br>
         </fieldset>
     </td>
+    <tr>
+        <th align="left"><strong> Загрузка файла на сервер:</strong></th>
+        <th><strong>Валидация данных HTML5:</strong></th>
+    </tr>
+    <p><td align="left"></p>
+    <fieldset>
+        <legend>Upload</legend>
+        <input type="file" name="file_Field" dir=“ltr”><br>
+        Срок хранения (года): <br>
+        <input type="form" name="Browse" size="10" formenctype="multipart/form-data">
+        <input type="submit" value="Загрузить"> <br>
+    </fieldset>
+    </td>
+    <p><td align="left"></p>
+    <fieldset>
+        <legend>Строка поиска</legend>
+        <input type="text" size="20" pattern="[А-Я][а-я]">
+        <p>Телефонный номер в формате +XXX-XX-XXXXXXX, где X - любое число
+            должна быть цифра:</p>
+        <input type="text" size="15" pattern="[0-9]{3}-[0-9]{2}-[0-9]{7}">
+        <input type="submit" value="Отправить"><br>
+    </fieldset>
+    </td>
 </table>
 </form>
 </body>
