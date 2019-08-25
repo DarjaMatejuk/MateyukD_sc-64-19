@@ -9,9 +9,9 @@
 <form action="http://fe.it-academy.by/TestForm.php">
     <fieldset>
         <legend>Личные данные</legend>
-        <input type="text" pattern="[А-Яа-я]" name="Фамилия" value="Фамилия" size="25" placeholder="это обязательное поле" required autofocus> <br>
-        <input type="text" pattern="[А-Яа-я]" name="Имя" value="Имя" size="20"placeholder="это обязательное поле" required> <br>
-        <input type="text" pattern="[А-Яа-я]" name="Отчество" value="Отчество" size="24" placeholder="это обязательное поле" required> <br>
+        <input type="text" pattern="^[А-Яа-я]" name="Фамилия" size="25" placeholder="Фамилия" required autofocus> <br>
+        <input type="text" pattern="^[А-Яа-я]" name="Имя" size="20" placeholder="Имя" required> <br>
+        <input type="text" pattern="^[А-Яа-я]" name="Отчество" size="24" placeholder="Отчество" required> <br>
     <fieldset>
         <legend>Паспортные данные</legend>
         <input type="text" pattern="" name="AA" value="Серия" placeholder="это обязательное поле" required>
@@ -83,8 +83,8 @@
     </fieldset>
     <fieldset>
         <legend>Данные для входа и восстановления пароля</legend>
-        <input type="text" id="login" pattern="[A-Za-z] {5}" size="20" name="Логин" value="Логин" placeholder="это обязательное поле" required><br>
-        <input type="password" id="pass" pattern="[A-Za-z] {10}" size="20" name="Пароль" value="Пароль" placeholder="это обязательное поле" required><br>
+        <input type="text" id="login" pattern="^[A-Za-z] {5}" size="20" name="Логин" value="Логин" placeholder="это обязательное поле" required><br>
+        <input type="password" id="pass" pattern="^[A-Za-z] {10}" size="20" name="Пароль" value="Пароль" placeholder="это обязательное поле" required><br>
     </fieldset>
     <fieldset>
         <legend>Координаты</legend>
