@@ -14,12 +14,12 @@
         <input type="text" pattern="^[А-Яа-я]" name="Отчество" size="24" placeholder="Отчество" required> <br>
     <fieldset>
         <legend>Паспортные данные</legend>
-        <input type="text" pattern="" name="AA" value="Серия" placeholder="это обязательное поле" required>
-        <input type="text" pattern="" name="123456" value="Номер паспорта" placeholder="это обязательное поле" required> <br>
+        <input type="text" pattern="" name="AA" placeholder="Серия" required>
+        <input type="text" pattern="" name="123456" placeholder="Номер паспорта" required> <br>
     </fieldset>
     <fieldset>
         <legend>Дата рождения</legend>
-        <input type="text" pattern="[0-9]{4}" name="Год рождения" value="2000"> <br>
+        <input type="text" pattern="^[0-9]{4}" name="Год рождения" value="2000"> <br>
         <select name="list" id="list">
             <option value="1">Январь</option>
             <option value="2">Февраль</option>
@@ -83,8 +83,8 @@
     </fieldset>
     <fieldset>
         <legend>Данные для входа и восстановления пароля</legend>
-        <input type="text" id="login" pattern="^[A-Za-z] {5}" size="20" name="Логин" value="Логин" placeholder="это обязательное поле" required><br>
-        <input type="password" id="pass" pattern="^[A-Za-z] {10}" size="20" name="Пароль" value="Пароль" placeholder="это обязательное поле" required><br>
+        <input type="text" id="login" pattern="^[A-Za-z] {5}" size="20" name="Логин" placeholder="Логин" required><br>
+        <input type="password" id="pass" pattern="^[A-Za-z] {10}" size="20" name="Пароль" placeholder="Пароль" required><br>
     </fieldset>
     <fieldset>
         <legend>Координаты</legend>
